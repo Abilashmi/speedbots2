@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+
+  <!-- Bootstrap CSS (Bootstrap 5) -->
+   <!-- Bootstrap CSS (Bootstrap 5) -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
+   
+ 
+
+</head>
+<body>
+  <header>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid" style="max-height: 100px;margin-left: 20px;"> <!-- Adjust max-height as needed -->
+  </a>
+
+  <!-- Hamburger toggle button (only visible in mobile view) -->
+  <button class="navbar-toggler ms-auto d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navigation links and buttons -->
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Solution</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Case Study</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <!-- Buttons inside navbar for mobile view -->
+<li class="nav-item d-lg-none">
+  <button class="btn btn-primary" style="margin: 10px;">Log In</button>
+</li>
+<li class="nav-item d-lg-none">
+  <button class="btn btn-outline-primary" style="margin: 10px;">Sign Up</button>
+</li>
+
+    </ul>
+  </div>
+
+  <!-- Buttons on the right (visible on large screens) -->
+  <div class="d-none d-lg-flex" style="margin-right: 20px;">
+    <button class="btn btn-primary me-2">Log In</button>
+    <button class="btn btn-outline-primary">Sign Up</button>
+  </div>
+</nav>
+  </header>
+  <br>
+  <br>
+
+<!-- Hero Section with Heading, Paragraph, and Button -->
+ <div class="bgimage"> 
+<div class="container text-center hero-section">
+  <h1>The Ultimate AI Chatbot Solution</h1>
+  <p class="hero-description">
+    Improve sales, and significantly boost customer engagement. Let AI automation handle the repetitive tasks, <br>so you can focus on growing your business.
+  </p>
+  <a href="#" class="btn btn-brown">Book a Demo</a> <!-- Customizable Button -->
+</div>
+</div>
+
+<!-- Section with Image, Heading, Paragraph, and 9 Image Icons -->
+<div class="text-center my-5 core-features-section">
+  <!-- Image Section -->
+  <img src="img/another banner.png" alt="Section Image" class="img-fluid mb-4 centerimage">
+
+  <!-- Heading -->
+  <h1 class="text-white mb-4">Get Started Today | Discover the Power of Speedbots</h1> <!-- White text for the heading -->
+
+  <!-- Paragraph -->
+  <p class="text-white">Your all-in-one solution for 10+ digital channels</p> <!-- White text for the paragraph -->
+
+  <!-- Image Icons Row (9 icons) -->
+  <div class="row justify-content-center mt-5">
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/whastapp.png" alt="Feature 1" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/facebook.png" alt="Feature 2" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="new data/instagram.png" alt="Feature 3" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/messenger.png" alt="Feature 4" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="new data/telegram.png" alt="Feature 5" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/mail.png" alt="Feature 6" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/google.png" alt="Feature 7" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/goole businesss.png" alt="Feature 8" class="img-fluid small-icon">
+      </div>
+      <div class="col-4 col-md-1 mb-3">
+          <img src="img/shopee.png" alt="Feature 9" class="img-fluid small-icon">
+      </div>
+  </div>
+</div>  
+
+<!-- Section with white background #FFFFFF -->
+<div class="container" style="background-color: #FFFFFF; padding: 4rem 0;">
+  <!-- Heading -->
+  <h1 class="text-center mb-5">What Our Clients Say</h1>
+
+  <!-- Testimonial Carousel in a Box -->
+  <div class="testimonial-carousel-box" style="border: 1px solid #ddd; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+    <!-- Testimonial Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client1.jpg" class="rounded-circle mb-3" alt="Client 1" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">John Doe</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"This service has transformed our business. The customer support is amazing, and the results speak for themselves."</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client2.jpg" class="rounded-circle mb-3" alt="Client 2" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Jane Smith</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"An incredible solution that helped us streamline our processes and improve client engagement. Highly recommend!"</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client3.jpg" class="rounded-circle mb-3" alt="Client 3" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Sarah Lee</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"Amazing experience! The product is intuitive and easy to use. We've seen a marked improvement in efficiency."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client4.jpg" class="rounded-circle mb-3" alt="Client 4" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Michael Brown</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"A great addition to our business strategy. The support team was always available to help us with the setup."</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client5.jpg" class="rounded-circle mb-3" alt="Client 5" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Chris Williams</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"The system is robust and intuitive, saving us a lot of time in managing tasks. Very happy with it!"</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client6.jpg" class="rounded-circle mb-3" alt="Client 6" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Olivia White</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"An absolute game-changer for our customer service team. We can now handle inquiries more effectively."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client7.jpg" class="rounded-circle mb-3" alt="Client 7" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Mark Johnson</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"The results were amazing. Our team was able to improve productivity almost immediately after using the platform."</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client8.jpg" class="rounded-circle mb-3" alt="Client 8" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Emily Davis</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"We’ve seen great results with the solution. The customer engagement has increased significantly."</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="testimonial-box p-3" style="border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8;">
+                <img src="img/client7.jpg" class="rounded-circle mb-3" alt="Client 7" style="width: 100px; height: 100px; object-fit: cover;">
+                <h5 class="mb-2">Mark Johnson</h5>
+                <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"The results were amazing. Our team was able to improve productivity almost immediately after using the platform."</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls (Side Arrows) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Full-width Section with Background Color #F8F8F8 -->
+<div class="container-fluid" style="background-color: #F8F8F8;">
+    <div class="container text-center py-5">
+      <!-- Heading -->
+      <h1 class="mb-4">Our Impact at a Glance</h1>
+  
+      <!-- 4 Small Containers (Cards or Boxes) -->
+      <div class="row">
+        <!-- First Container (White Background for Icon Box) -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="p-3 border rounded shadow-sm" style="background-color: #FFFFFF;">
+           <img src="img/1customer.png">
+            <h5 class="mt-3">560+</h5>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+  
+        <!-- Second Container (White Background for Icon Box) -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="p-3 border rounded shadow-sm" style="background-color: #FFFFFF;">
+            <img src="img/2bot.png">
+            <h5 class="mt-3">20K+</h5>
+            <p>Bot Integrated</p>
+          </div>
+        </div>
+  
+        <!-- Third Container (White Background for Icon Box) -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="p-3 border rounded shadow-sm" style="background-color: #FFFFFF;">
+            <img src="img/3auto flows.png">
+            <h5 class="mt-3">100K+</h5>
+            <p>Automated Flows</p>
+          </div>
+        </div>
+  
+        <!-- Fourth Container (White Background for Icon Box) -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="p-3 border rounded shadow-sm" style="background-color: #FFFFFF;">
+            <img src="img/4conversation handle.png">
+            <h5 class="mt-3">80M+</h5>
+            <p>Conversations Handled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" style="background-color: #fff; padding: 40px 20px; max-width: 900px; margin: 0 auto; border-radius: 10px;">
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center mb-4">
+      <button class="btn tab-button active" onclick="changeTab('marketing', this)">Marketing</button>
+      <button class="btn tab-button" onclick="changeTab('sales', this)">Sales</button>
+      <button class="btn tab-button" onclick="changeTab('support', this)">Support</button>
+    </div>
+  
+    <!-- Content Section -->
+    <div class="row flex-column flex-md-row">
+      <!-- Image on the left for larger screens, centered on mobile -->
+      <div class="col-md-5 mb-3 mb-md-0 text-center text-md-start">
+        <img id="content-image" src="img/3.png" alt="Marketing Image" class="img-fluid mx-auto d-block">
+      </div>
+  
+      <!-- Content on the right for larger screens, below for smaller screens -->
+      <div class="col-md-7 mt-3 mt-md-0">
+        <h3 id="content-heading">Boost Engagement and Drive Conversions</h3>
+        <ul id="content-list">
+          <li>Capture leads via click-to-chat links, ads, QR codes, and widgets.</li>
+          <li>Automate campaigns to guide customers from discovery to loyalty.</li>
+          <li>Send retargeting messages with personalized flows and segmentation.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Static Button -->
+    <div class="text-center mt-4">
+      <button class="btn btn-primary" style="background: linear-gradient(to right, #0056b3, #1e90ff); width: 150px;">Book a Demo</button>
+    </div>
+  </div>
+  
+  
+  
+  
+  <section>
+    <div class="container-sm features-section py-5">
+      <h2 class="text-center mb-4">Features of Speedbot</h2>
+  
+      <div id="featureCarousel" class="carousel">
+        <div class="row justify-content-center align-items-center">
+          <!-- Left side with dynamic content -->
+          <div class="col-md-5 text-center text-md-left">
+            <h3 id="speedbot-feature-heading" class="text-primary">Chat Automation</h3>
+            <p id="speedbot-feature-description">
+              Automate messages, route conversations, and update contacts based on customer behavior. Integrate data easily with webhooks and boost engagement with perfect timing.
+            </p>
+          </div>
+          <!-- Right side with dynamic image -->
+          <div class="col-md-5 text-center">
+            <img id="speedbot-feature-image" src="img/2.png" alt="Chat Automation" class="img-fluid">
+          </div>
+        </div>
+  
+        <!-- Carousel Controls Positioned at Bottom Left -->
+        <div class="carousel-controls d-flex justify-content-center mt-3">
+          <button class="carousel-control-prev me-2" onclick="previousFeature()">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" onclick="nextFeature()">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section class="carousel-section my-5 text-center">
+    <h2 class="integrations-section">Over 100 Smooth Integrations at Your Fingertips</h2>
+  
+    <div class="carousel-fullscreen">
+      <!-- Row 1 -->
+      <div class="slider33">
+        <div class="slide-track33">
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <!-- Repeat logos for seamless looping -->
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+          <div class="slide33"><img src="img/social-logo1.png" width="100" alt="Logo 1" /></div>
+          <div class="slide33"><img src="img/social-logo2.png" width="100" alt="Logo 2" /></div>
+          <div class="slide33"><img src="img/social-logo3.png" width="100" alt="Logo 3" /></div>
+          <div class="slide33"><img src="img/social-logo4.png" width="100" alt="Logo 4" /></div>
+          <div class="slide33"><img src="img/social-logo5.png" width="100" alt="Logo 5" /></div>
+        </div>
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="slider33">
+        <div class="slide-track33">
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <!-- Repeat logos for seamless looping -->
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          <div class="slide33"><img src="img/social-logo6.png" width="100" alt="Logo 6" /></div>
+          <div class="slide33"><img src="img/social-logo7.png" width="100" alt="Logo 7" /></div>
+          <div class="slide33"><img src="img/social-logo8.png" width="100" alt="Logo 8" /></div>
+          <div class="slide33"><img src="img/social-logo9.png" width="100" alt="Logo 9" /></div>
+          <div class="slide33"><img src="img/social-logo10.png" width="100" alt="Logo 10" /></div>
+          
+        </div>
+      </div>
+  
+      <!-- Row 3 -->
+      <div class="slider33">
+        <div class="slide-track33">
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+
+          <!-- Repeat logos for seamless looping -->
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+          <div class="slide33"><img src="img/social-logo11.png" width="100" alt="Logo 11" /></div>
+          <div class="slide33"><img src="img/social-logo12.png" width="100" alt="Logo 12" /></div>
+          <div class="slide33"><img src="img/social-logo13.png" width="100" alt="Logo 13" /></div>
+          <div class="slide33"><img src="img/social-logo14.png" width="100" alt="Logo 14" /></div>
+          <div class="slide33"><img src="img/social-logo15.png" width="100" alt="Logo 15" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div style=" padding: 25px;height: 100%;">
+        <h1 class="banner-5-title" style="text-align: center;">Clients trust us</h1>
+        <div class="container-3" >
+        
+    
+        <div class="slider3" style="padding: 25px; ">
+            
+            <div class="slide-track3">
+                <div class="slide3">
+                    <img src="img/brand-1.webp" height="auto" width="100" alt="">
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-2.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-3.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-4.webp" height="auto" width="100" alt="" />
+                </div>
+           s
+                <div class="slide3">
+                    <img src="img/brand-6.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_7.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_8.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_9.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_10.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-1.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-2.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-3.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-4.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-5.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-6.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_7.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_8.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_9.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand_10.webp" height="auto" width="100" alt="" />
+                </div>
+                <div class="slide3">
+                    <img src="img/brand-1.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-2.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-3.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-4.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-5.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-6.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_7.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_8.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_9.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_10.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-1.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-2.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-3.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-4.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-5.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-6.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_7.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_8.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_9.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_10.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-1.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-2.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-3.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-4.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-5.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand-6.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_7.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_8.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_9.webp" height="auto" width="100" alt="" />
+            </div>
+            <div class="slide3">
+                    <img src="img/brand_10.webp" height="auto" width="100" alt="" />
+            </div>
+                
+                
+            </div>
+        </div>
+        </div>
+        </div>
+    
+                </section>
+  
+  
+  
+ <section class="content-section">
+  <div class="container text-center">
+    <h1 class="section-title">Blog</h1>
+
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="content-card">
+          <img src="img/blog1.png" alt="Article Image" class="content-card-image">
+          <div class="content-card-body">
+            <p class="content-card-date"><i class="fas fa-calendar-alt"></i> 03 Oct, 2024</p>
+            <h2 class="content-card-title">Lorem Ipsum</h2>
+            <p class="content-card-text">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+            <a href="#" class="content-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="content-card">
+          <img src="img/blog2.png" alt="Article Image" class="content-card-image">
+          <div class="content-card-body">
+            <p class="content-card-date"><i class="fas fa-calendar-alt"></i> 03 Oct, 2024</p>
+            <h2 class="content-card-title">Lorem Ipsum</h2>
+            <p class="content-card-text">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+            <a href="#" class="content-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="content-card">
+          <img src="img/blog3.png" alt="Article Image" class="content-card-image">
+          <div class="content-card-body">
+            <p class="content-card-date"><i class="fas fa-calendar-alt"></i> 03 Oct, 2024</p>
+            <h2 class="content-card-title">Lorem Ipsum</h2>
+            <p class="content-card-text">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+            <a href="#" class="content-card-link">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="view-more-link">View More...</a>
+  </div>
+</section>
+<footer class="bg-primary text-white py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Column for Logo -->
+      <div class="col-md-3 mb-4 text-center text-md-start">
+        <div class="mb-3">
+          <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid mx-auto d-block" style="max-width: 120px; background-color: white;">
+        </div>
+      </div>
+      
+
+      <!-- Column for Paragraph -->
+      <div class="col-md-5 mb-4">
+        <p>Speed bot is a cutting-edge conversational AI platform that automates critical business processes</p>
+        <h6>Follow us</h6>
+        <div class="d-flex">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-google"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+     <!-- Column for Useful Links -->
+<div class="col-md-4">
+  <div class="row">
+    <div class="col-6">
+      <h6>Useful Links</h6>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Service</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Reviews</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Industries</a></li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <ul class="list-unstyled mt-4 mt-md-0">
+        <li><a href="#" class="text-white text-decoration-none">Integration</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Automation</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- Link to Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- Bootstrap JS (includes Popper.js for tooltips and popovers) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+
+  
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  
+  <!-- Bootstrap JS (Bootstrap 5) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+
+
+  
+
+
+
+<script>
+  function changeTab(tabName, button) {
+  // Remove the 'active' class from all buttons
+  const buttons = document.querySelectorAll('.tab-button');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Add 'active' class to the clicked button
+  button.classList.add('active');
+
+  // Change content based on the clicked tab
+  const contentHeading = document.getElementById('content-heading');
+  const contentList = document.getElementById('content-list');
+  const contentImage = document.getElementById('content-image');
+
+  if (tabName === 'marketing') {
+    contentHeading.innerText = 'Boost Engagement and Drive Conversions';
+    contentList.innerHTML = `
+      <li>Capture leads via click-to-chat links, ads, QR codes, and widgets.</li>
+      <li>Automate campaigns to guide customers from discovery to loyalty.</li>
+      <li>Send retargeting messages with personalized flows and segmentation.</li>
+    `;
+    contentImage.src = 'img/3.png'; // Replace with actual image path
+    contentImage.alt = 'Marketing Image';
+  } else if (tabName === 'sales') {
+    contentHeading.innerText = 'Accelerate Your Sales Pipeline';
+    contentList.innerHTML = `
+      <li>Engage prospects with targeted messaging and content.</li>
+      <li>Automate follow-ups to nurture leads effectively.</li>
+      <li>Integrate CRM for seamless lead management.</li>
+    `;
+    contentImage.src = 'img/2.png'; // Replace with actual image path
+    contentImage.alt = 'Sales Image';
+  } else if (tabName === 'support') {
+    contentHeading.innerText = 'Enhance Customer Support';
+    contentList.innerHTML = `
+      <li>Provide 24/7 support with AI-powered chatbots.</li>
+      <li>Resolve queries quickly with automated workflows.</li>
+      <li>Improve customer satisfaction with personalized responses.</li>
+    `;
+    contentImage.src = 'img/3.png'; // Replace with actual image path
+    contentImage.alt = 'Support Image';
+  }
+}
+
+</script>
+<script>
+// Feature data with images
+const speedbotFeatures = [
+  {
+    title: "Chat Automation",
+    description: "Automate messages, route conversations, and update contacts based on customer behavior. Integrate data easily with webhooks and boost engagement with perfect timing.",
+    image: "img/2.png" // Replace with the actual image URL
+  },
+  {
+    title: "Lead Generation",
+    description: "Capture leads from multiple touchpoints and engage potential customers with automated workflows. Ensure lead nurturing and high conversion rates.",
+    image: "img/3.png" // Replace with the actual image URL
+  },
+  {
+    title: "Customer Support",
+    description: "Provide real-time support with AI-powered responses. Enhance customer satisfaction and retention with faster issue resolution.",
+    image: "img/2.png" // Replace with the actual image URL
+  },
+  {
+    title: "Sales Automation",
+    description: "Streamline your sales process with automation. Track metrics, manage follow-ups, and close deals more efficiently with targeted workflows.",
+    image: "img/3.png" // Replace with the actual image URL
+  }
+];
+
+let currentFeatureIndex = 0;
+
+// Update the content in the carousel
+function updateFeature() {
+  document.getElementById("speedbot-feature-heading").textContent = speedbotFeatures[currentFeatureIndex].title;
+  document.getElementById("speedbot-feature-description").textContent = speedbotFeatures[currentFeatureIndex].description;
+  document.getElementById("speedbot-feature-image").src = speedbotFeatures[currentFeatureIndex].image;
+}
+
+// Go to the next feature
+function nextFeature() {
+  currentFeatureIndex = (currentFeatureIndex + 1) % speedbotFeatures.length;
+  updateFeature();
+}
+
+// Go to the previous feature
+function previousFeature() {
+  currentFeatureIndex = (currentFeatureIndex - 1 + speedbotFeatures.length) % speedbotFeatures.length;
+  updateFeature();
+}
+
+// Optional: Auto-cycle every 5 seconds
+setInterval(nextFeature, 5000);
+
+</script>
+
+
+</body>
+</html>
