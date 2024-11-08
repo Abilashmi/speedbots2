@@ -6,8 +6,21 @@
 
 body {
     overflow-x: hidden; /* Prevent any horizontal overflow */
-}
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins is imported or available */
 
+}
+h1{
+ 
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins is imported or available */
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: center; /* Center-aligns text content within the body */
+    text-underline-position: from-font; /* Underline aligns based on font settings */
+    text-decoration-skip-ink: none; /* Ensures underlines do not skip over ink */
+  
+  
+}
 .bgimage{
   background-image: url('img/Vector.png');
   
@@ -487,7 +500,10 @@ padding: 20px;
   background: linear-gradient(to right, #0056b3, #1e90ff);
   width: 150px; /* Adjust this value to change the button width */
 }
-
+.engage{
+  text-align: center;
+ 
+}
 /* CSS */
 .btn1 {
   align-items: center;
