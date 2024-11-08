@@ -15,7 +15,8 @@ body {
  
  background-position: center; /* Centers the image */
 background-repeat: no-repeat; /* Prevents the image from repeating */
-height: 100vh; /* Adjust the height as needed */
+height:70vh; /* Adjust the height as needed */
+margin-top: 60px;
 }     
 
     
@@ -33,7 +34,6 @@ height: 100vh; /* Adjust the height as needed */
 .navbar .btn {
   border-radius: 20px; /* Rounded button edges */
 }
-
 
   .btn {
     display: inline-block;
@@ -73,13 +73,22 @@ height: 100vh; /* Adjust the height as needed */
   }
 }
 
+@media (max-width: 767px) {
+  .tab-button {
+    flex: 1 1 100px; /* Reduce min-width for mobile view */
+    margin: 5px; /* Optional: Add some space between buttons */
+  }
+}
+
   .tab-button {
   background-color: #f0f0f0; /* Default button color */
   border: none;
   margin: 0 5px;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 200px;
+  
 }
 
 .tab-button.active {
@@ -97,6 +106,7 @@ height: 100vh; /* Adjust the height as needed */
 @media (max-width: 768px) {
     .text-center {
         margin-top: 20px; /* Reduce the top margin for smaller screens */
+       
     }
 }
 
@@ -116,19 +126,32 @@ height: 100vh; /* Adjust the height as needed */
   background-color: #D8D8D8;
   border-radius: 10px;
 }
-
-.carousel-controls {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+.features-section .col-md-5 {
+  text-align: left !important;
 }
+.features-section {
+  width: 100%; /* Full width */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-fluid {
+  max-width: 1200px; /* Center the content with a maximum width */
+  margin: 0 auto; /* Centers the container within the section */
+}
+
+.carousel-controls button {
+  background: transparent;
+  border: none;
+}
+
 
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 60%; /* Center vertically */
     transform: translateY(-50%); /* Adjust to perfectly center */
-    width: 50px; /* Adjust width as needed */
+    width: 40px; /* Adjust width as needed */
     height: 50px; /* Adjust height as needed */
     display: flex;
     justify-content: center;
@@ -139,8 +162,23 @@ height: 100vh; /* Adjust the height as needed */
 @media (max-width: 768px) {
     .carousel-control-prev,
     .carousel-control-next {
-        width: 40px; /* Slightly smaller for mobile */
+        width: 25px; /* Slightly smaller for mobile */
         height: 40px;
+        position: absolute;
+        bottom: 10px; /* Adjust this value as needed */
+    }
+
+    .carousel-control-prev {
+        left: 10px; /* Adjust the position from the left */
+    }
+
+    .carousel-control-next {
+        right: 10px; /* Adjust the position from the right */
+    }
+
+    /* Make sure the carousel container has relative positioning */
+    .carousel {
+        position: relative;
     }
 }
 
@@ -155,6 +193,7 @@ height: 100vh; /* Adjust the height as needed */
   margin: 0; /* Remove default margin */
   
 }
+
 
 .carousel-fullscreen {
   width: 100vw; /* Full viewport width */
@@ -171,7 +210,7 @@ height: 100vh; /* Adjust the height as needed */
 .slider33 {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 150%;
     position: relative;
     margin: 20px 0; /* Vertical margin */
 }
@@ -186,8 +225,8 @@ height: 100vh; /* Adjust the height as needed */
 .slide33 {
     display: inline-block;
     flex: 0 0 auto;
-    padding: 0 10px; /* Space between slides */
-    margin: 0 10px; /* Adjust spacing as needed */
+    padding: 10px 10px; /* Space between slides */
+    margin: 10px 10px; /* Adjust spacing as needed */
 }
 
 /* Keyframes for scrolling */
@@ -203,7 +242,15 @@ height: 100vh; /* Adjust the height as needed */
     width: 100%;
   overflow: hidden;
     margin: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+
+   
     
+}
+.clint3{
+  background-color: #f8f6f6c6;
 }
 
 
@@ -224,6 +271,7 @@ height: 100vh; /* Adjust the height as needed */
     overflow: hidden;
     position: relative;
     width: 100%;
+    
 }
 
 .slide-track3 {
@@ -241,13 +289,18 @@ height: 100vh; /* Adjust the height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 10px;
     padding: 10px; /* Add padding around images */
     box-sizing: border-box; /* Include padding in the element's total width/height */
+
 }
 
 .slide3 img {
-    max-width: 100%; /* Ensure images don't overflow their container */
+    max-width: 70%; /* Ensure images don't overflow their container */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
 }
 
 @keyframes scroll {
@@ -290,8 +343,21 @@ height: 100vh; /* Adjust the height as needed */
   max-width: 1200px; /* Adjust this value to your desired max width */
   margin: 0 auto; /* Centers the container */
   padding: 0 15px; /* Optional: Adds padding for responsiveness */
+  margin-bottom: 80px;
+  border-radius: 50px;
 }
-
+.hpyc{
+  margin-top: -70px;
+}
+.boti{
+  margin-top: -70px;
+}
+.autof{
+  margin-top: -70px;
+}
+.convh{
+  margin-top: -70px;
+}
 /* Card Styling */
 .content-card {
   background: #F8F8F8;
@@ -357,6 +423,7 @@ height: 100vh; /* Adjust the height as needed */
 
 /* Core Features Section */
 .core-features-section {
+  
     background-color: #006FD3;
     padding: 3rem 0;
     width: 100%;
@@ -391,19 +458,78 @@ height: 100vh; /* Adjust the height as needed */
 
 .centerimage{
 
-  margin-top: -500px;
+  margin-top: -300px;
+  width: 1000px;
 }
 
 @media (max-width: 768px){
   .centerimage{
 
-margin-top: -100px;
+margin-top: -170px;
 padding: 20px;
 
 }
 .bgimage{
   height: 300px;
   margin-bottom :100px;
+  
 }
 
+}
+.bkd{
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-demo {
+  background: linear-gradient(to right, #0056b3, #1e90ff);
+  width: 150px; /* Adjust this value to change the button width */
+}
+
+/* CSS */
+.btn1 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0,#1676d4 0, #1072d3 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btn1:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btn1:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn1:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
 }
