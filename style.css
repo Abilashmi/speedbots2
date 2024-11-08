@@ -21,6 +21,11 @@ h1{
   
   
 }
+.testimage{
+  position: relative;
+  right: 0;
+ 
+}
 .bgimage{
   background-image: url('img/Vector.png');
   
