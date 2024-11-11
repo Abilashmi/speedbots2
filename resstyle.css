@@ -1,0 +1,40 @@
+@media (max-width: 480px) {
+    h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .hero-section h1{
+        margin-bottom: 40px;
+    }
+    .centerimage{
+
+        margin-top: -70px;
+        margin-bottom: 40px;
+    
+    }
+
+ 
+
+}
+
+@media (max-width: 768px) {
+
+.guest{
+    margin-bottom: 70px !important;
+}
+h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+.hero-section h1{
+    margin-bottom: 40px;
+}
+
+.popins2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+}  
+}

@@ -1,7 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.popins2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 10px;
+
+}
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+ 
 }
 
 body {
@@ -34,7 +50,7 @@ h1{
  background-position: center; /* Centers the image */
 background-repeat: no-repeat; /* Prevents the image from repeating */
 height:70vh; /* Adjust the height as needed */
-margin-top: 60px;
+margin-bottom: -50px;;
 }     
 
     
@@ -45,34 +61,10 @@ margin-top: 60px;
   }
 
   .nav-link {
-  font-size: 1rem; /* Adjust font size */
+  font-size: 14px; /* Adjust font size */
   color: #333; /* Change link color */
-}
+  font-family: "Poppins", sans-serif;
 
-.navbar .btn {
-  border-radius: 20px; /* Rounded button edges */
-}
-
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn-brown {
-    background-color: #0056b3; /* New blue color */
-    color: #fff; /* White text */
-    border: 1px solid #004494; /* Darker blue border for contrast */
-}
-
-.btn-brown:hover {
-    background-color: #004494; /* Slightly darker blue on hover */
-    color: white;
 }
 
 
@@ -166,7 +158,7 @@ margin-top: 60px;
 
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute;
+    position: relative;
     top: 60%; /* Center vertically */
     transform: translateY(-50%); /* Adjust to perfectly center */
     width: 40px; /* Adjust width as needed */
@@ -175,29 +167,25 @@ margin-top: 60px;
     justify-content: center;
     align-items: center;
     z-index: 1; /* Ensure arrows are on top */
+
+    left:-38%;
 }
 
 @media (max-width: 768px) {
     .carousel-control-prev,
     .carousel-control-next {
+    
         width: 25px; /* Slightly smaller for mobile */
         height: 40px;
-        position: absolute;
-        bottom: 10px; /* Adjust this value as needed */
+        position: relative;
+        left: 0;
     }
 
-    .carousel-control-prev {
-        left: 10px; /* Adjust the position from the left */
-    }
+  
 
-    .carousel-control-next {
-        right: 10px; /* Adjust the position from the right */
-    }
 
     /* Make sure the carousel container has relative positioning */
-    .carousel {
-        position: relative;
-    }
+ 
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -442,7 +430,13 @@ margin-top: 60px;
 /* Core Features Section */
 .core-features-section {
   
-    background-color: #006FD3;
+  background-color: #0046b3;
+  background: linear-gradient(
+    to top,
+    #0046b3 85% ,
+    white 85%    /* White for the top half */
+      /* Blue for the bottom half */
+  );
     padding: 3rem 0;
     width: 100%;
     margin-left: 0;
@@ -476,15 +470,17 @@ margin-top: 60px;
 
 .centerimage{
 
-  margin-top: -300px;
-  width: 1000px;
+    margin-top: -200px;
+    width: 900px;
+    padding: 30px;
 }
 
 @media (max-width: 768px){
   .centerimage{
 
-margin-top: -170px;
-padding: 20px;
+  margin-top: -120px;
+  padding: 20px;
+
 
 }
 .bgimage{
@@ -492,6 +488,19 @@ padding: 20px;
   margin-bottom :100px;
   
 }
+.core-features-section{
+
+  margin-top: 70px;
+  background-color: #0046b3;
+  background: linear-gradient(
+    to top,
+    #0046b3 85% ,
+    white 85%    /* White for the top half */
+      /* Blue for the bottom half */
+  );
+ 
+}
+  
 
 }
 .bkd{
@@ -501,56 +510,78 @@ padding: 20px;
   align-items: center;
   text-align: center;
 }
-.btn-demo {
-  background: linear-gradient(to right, #0056b3, #1e90ff);
-  width: 150px; /* Adjust this value to change the button width */
-}
-.engage{
-  text-align: center;
- 
-}
-/* CSS */
-.btn1 {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0,#1676d4 0, #1072d3 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
+
+
+.lbutton {
+  background: linear-gradient(90deg, #0073e6, #0046b3); /* Gradient from lighter to darker blue */
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  display: inline-flex;
- 
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+  transition: background 0.3s ease;
+  margin: 5px;
 }
 
-.btn1:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+.lbutton:hover {
+  background: linear-gradient(90deg, #0046b3, #0073e6); /* Reverse the gradient on hover */
 }
 
-.btn1:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
+.btn1{
+  background: linear-gradient(90deg, #0073e6, #0046b3); /* Gradient from lighter to darker blue */
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
 }
 
-.btn1:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
+.navbar-toggler{
+  margin-right: 30PX;
+}
+
+@media (max-width:768px) {
+  .navbar-brand{
+    margin-left: -30px;
+  }
+  
+}
+
+.testimonial-box{
+  min-height: 350px;
+  height: 350px;
+
+}
+.feauture{
+  height: 250px;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap; /* Ensures that the items wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between icons */
+  
+}
+.small-icon{
+  width: 70px;
+}
+
+.icons .icon {
+  flex: 1 1 calc(33.33% - 20px); /* Ensures each icon takes up 33.33% minus gap on mobile */
+  max-width: calc(33.33% - 20px); /* Ensures proper size on mobile */
+}
+
+@media (min-width: 768px) {
+  .icons .icon {
+    flex: 1 1 calc(11.11% - 20px); /* 9 icons in a row for desktop */
+    max-width: calc(11.11% - 20px);
+  }
 }
