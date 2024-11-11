@@ -187,6 +187,59 @@ margin-bottom: -50px;;
     /* Make sure the carousel container has relative positioning */
  
 }
+.testimonial-card {
+  
+ 
+  margin-right: 20px;
+  width: 350px;
+ 
+
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.name-role {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.role {
+  font-size: 13px;
+  color: #888;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #f1c40f;
+  margin-top: 10px;
+}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: #0056D2;
