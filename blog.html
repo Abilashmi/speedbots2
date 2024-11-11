@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .tag{
+            font-family: Poppins;
+font-size: 38px;
+font-weight: 500;
+line-height: 52px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+        }
+    </style>
+    <header>
+        <!-- Navbar -->
+     <nav class="navbar navbar-expand-md navbar-light bg-light">
+       <a class="navbar-brand" href="#">
+         <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid" style="max-height: 120px;margin-left: 20px;"> <!-- Adjust max-height as needed -->
+       </a>
+     
+       <!-- Hamburger toggle button (only visible in mobile view) -->
+       <button class="navbar-toggler ms-auto d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <!-- Navigation links and buttons -->
+       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+         <ul class="navbar-nav mx-auto">
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Solution</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Features</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Contact</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="blog.html">Blog</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Case Study</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="pricing.html">Pricing</a>
+           </li>
+           <!-- Buttons inside navbar for mobile view -->
+     <li class="nav-item d-lg-none">
+       <button class="btn btn-primary" style="margin: 10px;">Log In</button>
+     </li>
+     <li class="nav-item d-lg-none">
+       <button class="btn btn-outline-primary" style="margin: 10px;">Sign Up</button>
+     </li>
+     
+         </ul>
+       </div>
+     
+       <!-- Buttons on the right (visible on large screens) -->
+       <div class="d-none d-lg-flex" style="margin-right: 20px;">
+         <button class="btn1 btn-primary me-2">Log In</button>
+         <button class="btn btn-outline-primary">Sign Up</button>
+       </div>
+     </nav>
+       </header>
+       <h1 class="tag">BLOG</h1>
+    <section class="bg-light text-dark">
+        <div class="container py-6">
+        <br>
+          <!-- Grid for multiple posts with fixed image containers -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog1.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 21, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog2.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 22, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog3.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 23, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+      
+            <!-- Additional cards hidden on small screens -->
+            <div class="col d-none d-sm-block">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog4.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 24, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col d-none d-sm-block">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog5.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 25, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col d-none d-sm-block">
+              <a href="#" class="card h-100 text-decoration-none">
+                <div class="img-container" style="height: 200px; overflow: hidden;">
+                  <img src="new data/blog6.jpg" alt="" class="card-img-top w-100 h-100 object-fit-cover">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">In usu laoreet repudiare legendos</h5>
+                  <span class="text-muted d-block mb-2">January 26, 2021</span>
+                  <p class="card-text">Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto...</p>
+                </div>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Load more button -->
+          <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary">Load more</button>
+          </div>
+        </div>
+      </section>
+         
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Column for Logo -->
+            <div class="col-md-3 mb-4 text-center text-md-start">
+              <div class="mb-3">
+                <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid mx-auto d-block" style="max-width: 120px; background-color: white;">
+              </div>
+            </div>
+            
+      
+            <!-- Column for Paragraph -->
+            <div class="col-md-5 mb-4">
+              <p>Speed bot is a cutting-edge conversational AI platform that automates critical business processes</p>
+              <h6>Follow us</h6>
+              <div class="d-flex">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-google"></i></a>
+              
+              </div>
+            </div>
+      
+           <!-- Column for Useful Links -->
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6">
+            <h6>Useful Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Service</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Reviews</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Industries</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled mt-4 mt-md-0">
+              <br>
+              <li><a href="#" class="text-white text-decoration-none">Integration</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Automation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Bootstrap JS (Including Popper.js) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+</body>
+</html>

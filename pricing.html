@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* Styling for the Toggle Buttons */
+        * body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .monly{
+            margin-top: -130px;
+            margin-bottom: -70px;
+        }
+        .toggle-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Space between the toggle buttons and the cards */
+            width: 200px; /* Set a fixed width for the button group */
+            margin-left: auto;
+            margin-right: auto;
+            top: 150px;
+        }
+
+        .toggle-group .btn {
+            border-radius: 0;
+            transition: background-color 0.3s, color 0.3s;
+            width: 50%; /* Ensure each button takes 50% of the container width */
+            text-align: center; /* Centers text within the button */
+        }
+
+        .toggle-group .btn.active {
+            background-color: #ffffff;
+            color: #0d6efd;
+            border: 1px solid #0d6efd;
+        }
+
+        .toggle-group .btn:not(.active) {
+            background-color: #f8f9fa;
+            color: #000;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 70px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .pribtn{
+            position: absolute;
+            bottom: 20px;
+           left: 25%;
+            
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .btn-book {
+            background-color: #006FD3;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+   
+    <header>
+        <!-- Navbar -->
+     <nav class="navbar navbar-expand-md navbar-light bg-light">
+       <a class="navbar-brand" href="#">
+         <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid" style="max-height: 120px;margin-left: 20px;"> <!-- Adjust max-height as needed -->
+       </a>
+     
+       <!-- Hamburger toggle button (only visible in mobile view) -->
+       <button class="navbar-toggler ms-auto d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <!-- Navigation links and buttons -->
+       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+         <ul class="navbar-nav mx-auto">
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Solution</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Features</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Contact</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="blog.html">Blog</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="#">Case Study</a>
+           </li>
+           <li class="nav-item mx-3">
+             <a class="nav-link" href="pricing.html">Pricing</a>
+           </li>
+           <!-- Buttons inside navbar for mobile view -->
+     <li class="nav-item d-lg-none">
+       <button class="btn btn-primary" style="margin: 10px;">Log In</button>
+     </li>
+     <li class="nav-item d-lg-none">
+       <button class="btn btn-outline-primary" style="margin: 10px;">Sign Up</button>
+     </li>
+     
+         </ul>
+       </div>
+     
+       <!-- Buttons on the right (visible on large screens) -->
+       <div class="d-none d-lg-flex" style="margin-right: 20px;">
+         <button class="btn1 btn-primary me-2">Log In</button>
+         <button class="btn btn-outline-primary">Sign Up</button>
+       </div>
+     </nav>
+       </header>
+
+    <div class="container py-5 monly text-center">
+        <!-- Top Toggle Button Group -->
+        <div class="btn-group toggle-group" role="group">
+            <button type="button" class="btn active" id="monthlyButton" onclick="setActiveButton('monthly')">Monthly</button>
+            <button type="button" class="btn" id="quarterlyButton" onclick="setActiveButton('quarterly')">Quarterly</button>
+        </div>
+
+        <!-- Pricing Section -->
+        <section class="py-4" id="pricingSection">
+            <div class="container px-4 mx-auto">
+                <div class="max-w-2xl mx-auto mb-4 text-center">
+                    <h2 class="text-4xl font-bold">PRICING</h2>
+                </div>
+                <div class="row" id="pricingCards">
+
+                    <!-- Beginner Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 h-100">
+                            <h4 class="text-center font-weight-bold">Beginner</h4>
+                            <p class="price text-center" id="beginnerPrice">Free</p>
+                            <p class="text-center text-muted">(Ideal for individuals)</p>
+                            <hr>
+                            <ul class="mb-4">
+                                <li><i class="bi bi-check-circle text-primary"></i> Aenean quis</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Morbi semper</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Tristique enim nec</li>
+                            </ul>
+                           <button class="btn btn-sm w-50 btn-book p-2 pribtn mx-auto">Get Started</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 h-100">
+                            <h4 class="text-center font-weight-bold">Pro</h4>
+                            <p class="price text-center" id="proPrice">$24 <span class="text-sm">/month</span></p>
+                            <p class="text-center text-muted">(Perfect for growing teams)</p>
+                            <hr>
+                            <ul class="mb-4">
+                                <li><i class="bi bi-check-circle text-primary"></i> Everything in Free</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Phasellus tellus</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Praesent faucibus</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Aenean et lectus blandit</li>
+                            </ul>
+                            <button class="btn btn-sm w-50 btn-book p-2 pribtn mx-auto">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- Team Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 h-100">
+                            <h4 class="text-center font-weight-bold">Team</h4>
+                            <p class="price text-center" id="teamPrice">$72 <span class="text-sm">/month</span></p>
+                            <p class="text-center text-muted">(For larger teams & businesses)</p>
+                            <hr>
+                            <ul class="mb-4">
+                                <li><i class="bi bi-check-circle text-primary"></i> Everything in Pro</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Fusce sem ligula</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Curabitur dictum</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Duis odio eros</li>
+                                <li><i class="bi bi-check-circle text-primary"></i> Vivamus ut lectus ex</li>
+                            </ul>
+                            <button class="btn btn-sm w-50 btn-book p-2 pribtn mx-auto">Get Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="bg-light text-dark">
+        <div class="container py-5">
+            <h2 class="text-center display-7">Frequently Asked Questions</h2>
+            <br>
+          
+            
+            <!-- FAQ Accordion -->
+            <div class="accordion" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="accordion-item mb-3"> <!-- Added margin-bottom here -->
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Ex orci laoreet egestas sapien magna egestas scelerisque?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lectus iaculis orci metus vitae ligula dictum per. Nisl per nullam taciti at adipiscing est.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="accordion-item mb-3"> <!-- Added margin-bottom here -->
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lorem at arcu rutrum viverra metus sapien venenatis lobortis odio?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Tincidunt ut hac condimentum rhoncus phasellus nostra. Magna porttitor egestas tincidunt neque vehicula potenti.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="accordion-item mb-3"> <!-- Added margin-bottom here -->
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Eleifend feugiat sollicitudin laoreet adipiscing bibendum suscipit erat?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Justo libero tellus integer tincidunt justo semper consequat venenatis aliquet imperdiet. Ultricies urna proin fusce nulla pretium sodales vel magna et massa euismod vulputate sed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS and Popper (needed for collapsible elements like the accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Column for Logo -->
+            <div class="col-md-3 mb-4 text-center text-md-start">
+              <div class="mb-3">
+                <img src="img/Speedbot - Logo Full Unit PNG.png" alt="Logo" class="img-fluid mx-auto d-block" style="max-width: 120px; background-color: white;">
+              </div>
+            </div>
+            
+      
+            <!-- Column for Paragraph -->
+            <div class="col-md-5 mb-4">
+              <p>Speed bot is a cutting-edge conversational AI platform that automates critical business processes</p>
+              <h6>Follow us</h6>
+              <div class="d-flex">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-google"></i></a>
+              
+              </div>
+            </div>
+      
+           <!-- Column for Useful Links -->
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6">
+            <h6>Useful Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Service</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Reviews</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Industries</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled mt-4 mt-md-0">
+              <br>
+              <li><a href="#" class="text-white text-decoration-none">Integration</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Automation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </footer>
+    
+    <!-- Bootstrap JS and Popper (needed for collapsible elements like the accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+
+    <script>
+        function setActiveButton(type) {
+            document.getElementById('monthlyButton').classList.remove('active');
+            document.getElementById('quarterlyButton').classList.remove('active');
+            
+            if (type === 'monthly') {
+                document.getElementById('monthlyButton').classList.add('active');
+                updatePricingContent('monthly');
+            } else {
+                document.getElementById('quarterlyButton').classList.add('active');
+                updatePricingContent('quarterly');
+            }
+        }
+
+        function updatePricingContent(type) {
+            const beginnerPrice = document.getElementById('beginnerPrice');
+            const proPrice = document.getElementById('proPrice');
+            const teamPrice = document.getElementById('teamPrice');
+
+            if (type === 'monthly') {
+                beginnerPrice.innerHTML = 'Free';
+                proPrice.innerHTML = '$24 <span class="text-sm">/month</span>';
+                teamPrice.innerHTML = '$72 <span class="text-sm">/month</span>';
+            } else if (type === 'quarterly') {
+                beginnerPrice.innerHTML = 'Free';
+                proPrice.innerHTML = '$66 <span class="text-sm">/quarter</span>'; // Example of discounted price for quarterly
+                teamPrice.innerHTML = '$216 <span class="text-sm">/quarter</span>'; // Example of discounted price for quarterly
+            }
+        }
+
+        // Initial content setup based on the default "Monthly" selection
+        window.onload = function() {
+            updatePricingContent('monthly');
+        };
+        
+    </script>
+    <script>
+        // Handle hamburger button click for custom toggle
+        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+          var navbarNav = document.getElementById('navbarNav');
+          navbarNav.classList.toggle('collapse');  // Toggle the 'collapse' class to open/close the menu
+        });
+      
+        // Close the navbar menu when clicking anywhere outside of it
+        document.addEventListener('click', function(event) {
+          var navbarNav = document.getElementById('navbarNav');
+          var navbarToggler = document.querySelector('.navbar-toggler');
+          
+          // Close the menu if the user clicks outside of the navbar
+          if (!navbarNav.contains(event.target) && !navbarToggler.contains(event.target)) {
+            navbarNav.classList.add('collapse');
+          }
+        });
+        
+      </script>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
